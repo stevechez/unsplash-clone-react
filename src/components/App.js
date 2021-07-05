@@ -5,7 +5,6 @@ import axios from 'axios';
 import './stylesheets/App.css';
 import Header from './header';
 import Results from './results';
-import Footer from './footer';
 
 class App extends React.Component {
 	constructor() {
@@ -58,7 +57,6 @@ class App extends React.Component {
 					onLoad={this.setLoadingFalse}
 					timeOut={this.state.timeOut}
 				/>
-				<Footer />
 			</div>
 		);
 	}

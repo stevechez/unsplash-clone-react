@@ -22,12 +22,12 @@ class searchHeader extends React.Component {
 		return (
 
 			<>
-				<nav className="navbar navbar-light bg-light navbar-expand-sm">
+				<nav className="navbar navbar-light bg-light navbar-expand-sm" style={{ 'position': 'sticky', 'top': '1px', 'zIndex': '999' }}>
 
 					<svg width="32" height="32" class="_1Jlgk" version="1.1" viewBox="0 0 32 32" aria-labelledby="unsplash-home" aria-hidden="false"><title id="unsplash-home">Unsplash Home</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg>
 				</nav>
 
-				<div className='formGroup' style={{ 'backgroundColor': '#ddd' }}>
+				<div className='formGroup headerHero'>
 					<input
 						type='text'
 						value={this.state.value}
@@ -46,8 +46,6 @@ class searchHeader extends React.Component {
 						Search
 					</button>
 				</div>
-
-
 			</>
 		);
 	}
