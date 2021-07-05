@@ -21,12 +21,12 @@ class App extends React.Component {
 		const response = await axios.get('https://api.unsplash.com/search/photos', {
 			params: { query, per_page: 21, page },
 			headers: {
-				Authorization: 'Client-ID   '
+				Authorization: 'Client-ID ' + process.env.REACT_APP_UNSPLASH_KEY
 			}
 		});
-
 		return response;
 	};
+
 	componentDidMount = async () => {
 		let response = await this.getImages('dog', 1);
 		// console.log(response);
